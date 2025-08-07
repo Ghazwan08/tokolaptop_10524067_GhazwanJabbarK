@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tentang Kami - Toko Kita</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    table {
+      border-collapse: collapse;
+      background-color: white;
+      max-width: 900px;
+      margin: 20px auto;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      width: 100%;
+    }
+    h1 {
+      margin: 0;
+    }
+    marquee {
+      background-color: #d35400;
+      color: white;
+      font-weight: bold;
+      padding: 10px 0;
+    }
+    a {
+      text-decoration: none;
+      color: #d35400;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+    td {
+      padding: 20px;
+      color: #34495e;
+    }
+    .sidebar {
+      background-color: #f7dcbb;
+      border: 1px solid #e67e22;
+    }
+    .profile-image {
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    footer {
+      background-color: #e67e22;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      border-radius: 0 0 8px 8px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td colspan="3" align="center" style="background-color: #e67e22; color: white;">
+        <h1>Tentang Perusahaan</h1>
+        <marquee>Kepuasan Anda Prioritas Kami</marquee>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="3" align="center" style="background-color: #f7dcbb;">
+        <a href="halamanProduk.html">Produk</a> |
+        <a href="transaksi.html">Transaksi</a> |
+        <a href="tentangSaya.html">Tentang Kami</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="20%" valign="top" class="sidebar">
+        <img src="Sidebar/sidebar-left.PNG" alt="Sidebar Kiri Image" style="width: 100%; height: auto; display: block; border-radius: 8px;"/>
+      </td>
+
+      <td width="60%" valign="top">
+        <h2 style="color: #e67e22;">Profil</h2>
+        <p>Kami menjual berbagai laptop sesuai keinginan Anda yang pasti murah dan berkualitas, hanya ada di Toko Laptop Ghazwankhair08.</p>
+
+        <h2 style="color: #e67e22;">Kontak Kami</h2>
+        <p>Nama: Ghazwan Jabbar Khairuuloh</p>
+        <img src="Foto profile/IMG_2185.JPG" width="150" alt="Foto Saya" class="profile-image"><br>
+        <p>Email: <a href="mailto:ghazwankhair08@gmail.com">ghazwankhair08@gmail.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/ghazwankhair08">@ghazwankhair08</a></p>
+      </td>
+
+      <td width="20%" valign="top" class="sidebar">
+        <img src="Sidebar/sidebar-left.PNG" alt="Sidebar Kanan Image" style="width: 100%; height: auto; display: block; border-radius: 8px;"/>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="3">
+        <footer>
+          &copy; 2025 Toko Laptop Ghazwankhair08
+        </footer>
+      </td>
+    </tr>
+  </table>
+
+  <script>
+    // Example JavaScript for potential interactivity
+    document.addEventListener('DOMContentLoaded', function() {
+      const profileImage = document.querySelector('.profile-image');
+      profileImage.addEventListener('click', function() {
+        alert('Ini adalah foto profil saya!');
+      });
+    });
+  </script>
+</body>
+</html>

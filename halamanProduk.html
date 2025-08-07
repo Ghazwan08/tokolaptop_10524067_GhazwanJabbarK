@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Produk - Toko Laptop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      margin-top: 20px;
+      text-align: center;
+      color: #e600ff;
+      font-weight: bold;
+    }
+    marquee {
+      background-color: #ff00b3;
+      color: rgb(30, 0, 255);
+      font-weight: bold;
+      padding: 10px 0;
+      margin-bottom: 15px;
+    }
+    a {
+      text-decoration: none;
+      color: #ff0000;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      margin: 0 auto;
+    }
+    td {
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+    .sidebar {
+      width: 20%;
+      vertical-align: top;
+    }
+    .product-container {
+      width: 60%;
+      vertical-align: top;
+    }
+    .product {
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      transition: transform 0.3s ease;
+    }
+    .product:hover {
+      transform: scale(1.02);
+    }
+    .product img {
+      width: 200px;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .product-title {
+      display: block;
+      margin-top: 8px;
+      color: #34495e;
+      font-size: 1.1em;
+    }
+    .product-specs {
+      display: block;
+      margin-top: 4px;
+      color: #7f8c8d;
+      font-style: italic;
+    }
+    .product-price {
+      margin-top: 4px;
+      font-weight: bold;
+    }
+    .buy-button {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 6px 14px;
+      background-color: #e67e22;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    .buy-button:hover {
+      background-color: #d35400;
+    }
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
+      padding: 10px 0;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <h1>Toko LAPTOP GHAZWANKHAIR08</h1>
+  <marquee>Promo Hebat! Laptop Berkualitas dengan Harga Terbaik!</marquee>
+
+  <!-- Menu -->
+  <p style="text-align: center; margin-bottom: 20px;">
+    <a href="halamanProduk.html">Produk</a> |
+    <a href="transaksi.html">Transaksi</a> |
+    <a href="tentangSaya.html">Tentang & Kontak</a>
+  </p>
+
+  <!-- Layout: Sidebar kiri - Konten produk - Sidebar kanan -->
+  <table>
+    <tr>
+      <!-- Sidebar Kiri -->
+      <td class="sidebar">
+        <img src="Sidebar/sidebar-left.PNG" alt="Sidebar Kiri Image" style="width: 100%; height: auto; display: block; border-radius: 8px;">
+      </td>
+
+      <!-- Konten Tengah -->
+      <td class="product-container">
+        <h2 style="color: #e67e22; margin-bottom: 10px;">Daftar Produk</h2>
+
+        <!-- Produk 1 -->
+        <div class="product">
+          <a href="transaksi.html">
+            <img src="Foto laptop/laptopA.jpeg" alt="Laptop A">
+          </a>
+          <b class="product-title">ASUS ROG Strix G16 G615JMR-DS94 Gaming Laptop</b>
+          <small class="product-specs">Prosesor i5, RAM 8GB, SSD 256GB</small>
+          <div class="product-price">Harga: Rp 15.000.000</div>
+          <a href="transaksi.html" class="buy-button">Beli</a>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="product">
+          <a href="transaksi.html">
+            <img src="Foto laptop/laptopB.jpeg" alt="Laptop B">
+          </a>
+          <b class="product-title">LOQ 15ARP9</b>
+          <small class="product-specs">Prosesor Ryzen 5, RAM 16GB, SSD 512GB</small>
+          <div class="product-price">Harga: Rp 8.500.000</div>
+          <a href="transaksi.html" class="buy-button">Beli</a>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="product">
+          <a href="transaksi.html">
+            <img src="Foto laptop/laptopC.jpeg" alt="Laptop C">
+          </a>
+          <b class="product-title">MacBook Pro 13 Touch Bar Skins (2016-2019) - Full Colour / Black Leather</b>
+          <small class="product-specs">Prosesor i7, RAM 16GB, SSD 1TB, RTX 3050</small>
+          <div class="product-price">Harga: Rp 12.000.000</div>
+          <a href="transaksi.html" class="buy-button">Beli</a>
+        </div>
+      </td>
+
+      <!-- Sidebar Kanan -->
+      <td class="sidebar">
+        <img src="Sidebar/sidebar-left.PNG" alt="Sidebar Kanan Image" style="width: 100%; height: auto; display: block; border-radius: 8px;">
+      </td>
+    </tr>
+  </table>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Toko Laptop Ghazwankhair08
+  </footer>
+
+  <script>
+    // Example JavaScript for potential interactivity
+    document.querySelectorAll('.buy-button').forEach(button => {
+      button.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        alert('Anda telah memilih untuk membeli produk ini!');
+      });
+    });
+  </script>
+</body>
+</html>
